@@ -28,21 +28,22 @@
                         <div class="flex-centrar">Hoteles</div>
                     </figcaption>
                 </figure>
-                <div class="paquete-info paquete-descripcion">
+                <div id="descripcionPR" class="paquete-info paquete-descripcion">
                     [descripcion]
                 </div>
             </div>
             <div class="paquete-comprar">
-                <h3 class="nombre paquete-nombre">Nombre</h3>
+                <h3 id="nombre" class="nombre paquete-nombre">Nombre</h3>
                 <div class="paquete-total">
-                    <p>Precio por persona: <span class="paquete-precio">$[precio]</span></p>
-                    <p>Precio total por (cantidad): <span class="precio-cantidad">[cantidad]</span></p>
+                    <p>Precio por persona: <span id="Sprecio" class="paquete-precio"></span></p>
+                    <input min="1" id="inputC" type="number">
+                    <p>Precio total por cantidad: <span id="cantidadSpan" class="precio-cantidad"></span></p>
                 </div>
                 <h4 class="rojo subtitulo">Vive tu experiencia!</h4>
                 <p>paga en cuotas sin interes</p>
                 <a href="#"><p class="azul">opciones de pago</p></a>
                 <div class="flex-centrar">
-                    <button class="btn btn-comprar">Comprar</button>
+                    <button id="botonComprar" class="btn btn-comprar">Comprar</button>
                     <button class="btn btn-contactar">Contactar</button>
                 </div>
                 <div class="metodos-pago">
@@ -55,5 +56,6 @@
             </div>
         </section>
     </div>
+        <script type="module" src="../Producto/agregarDatos_Storage.js"></script>  
 </body>
 </html>

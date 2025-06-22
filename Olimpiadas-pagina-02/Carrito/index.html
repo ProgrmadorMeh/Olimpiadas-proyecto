@@ -21,11 +21,11 @@
         <li class="paquete">
           <figure class="img-cont"><img class="img paquete-img" src="../imagenes/imagenPrueba.png" alt="Imagen del paquete"></figure> <!--[img]-->
           <div class="paquete-contenido">
-            <h3 class="nombre fuente-mediana paquete-nombre">[nombre]</h3>
+            <h3 id="nombre" class="nombre fuente-mediana paquete-nombre"></h3>
             
             <div class="paquete-info">
-              <div> <p>precio por persona</p> <p class="precio azul fuente-grande paquete-precio">$[precio]</p> </div>
-              <p class="cantidad flex-centrar paquete-cantidad">1</p>
+              <div> <p>precio por persona</p> <p class="precio azul fuente-grande paquete-precio" id="precioP"></p> </div>
+              <p id="cantidad" class="cantidad flex-centrar paquete-cantidad">1</p>
             </div>
 
             <button id="mandar" class="btn btn-ver">Ver</button>
@@ -39,7 +39,11 @@
       <button id="subir" class="btn btn-comprar fuente-mediana">Comprar</button>
 
     </div>
+    <div id="contenedor">
+
+    </div>
   </section>
+  <script src="mostrarDatos.js"></script>
 </body>
 </html>
 

@@ -18,32 +18,18 @@
             </figure>
 
         </header>
-        <section>
-            <h1 class="fuente-grande">Paquetes turisticos de <span class="paquete-nombre">[nombre]</span></h1>
-            <ul class="lista-paquetes">
-                <div class="paquete">
-                    <figure class="img-cont"><img class="paquete-img" src="../imagenes/imagenPrueba.png" alt="Imagen"></figure><!-- [Imagen] -->
-                    <div class="paquete-contenido">
-                        <ul class="paquete-datos">
-                            <li class="azul paquete-noches">Noches: [noches]</li>
-                            <li><h3 class="paquete-nombre">Nombre: [nombre]</h3></li>
-                            <li class="paquete-destino">Destino: [destino]</li>
-                            <li class="paquete-retiro">Saliendo desde: [retiro]</li>
-                            <li class="paquete-salida">Fecha de salida: [salida]</li>
-                            <li class="paquete-vuelo">Vuelo: [vuelo]</li>
-                            <li class="paquete-hotel">Hotel: [hotel]</li>
-                        </ul>
-                        <ul class="paquete-precio flex-centrar">
-                            <li>Precio por persona</li>
-                            <li class="azul precio paquete-precio">$[precio]</li>
-                            <li class="cantidad flex-centrar paquete-cantidad">[cantidad]</li>
-                            <li class="azul">paquetes now marketplace</li>
-                            <li><a href="#"><button id="mandar" class="btn">ver</button></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </ul>
+        <section id="section">
+            <h1 class="fuente-grande">Paquetes turisticos de <span class="paquete-nombre">[destino]</span></h1>
+          
         </section>
+        <select name="" id="filtro-destino">
+            <option value=""> Todos</option>
+            <option value="argentina">Argentina</option>
+            <option value="irlanda">Irlanda</option>
+            <option value="brasil">Brasil</option>
+            <option value="estados unidos">Estados unidos</option>
+        </select>
     </div>
+    <script type="module"src="AgregarPaquetes.js"></script>
 </body>
 </html>
