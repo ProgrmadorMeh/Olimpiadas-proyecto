@@ -8,26 +8,23 @@
 </head>
 <body >
     <header>
-        <a href="/index.html">
-            <div class="logo flex-centrar">
-                <p class="fuente-grande">Paquetes Now</p>
-                <p class="azul-oscuro">Gana tus experiencias!</p>
-            </div>
-        </a>
-        <figure class="ico-usuario">
-            <a href="#"><img class="img" src="/imagenes/icon/user-icon.png" alt="Usuario"></a>
-        </figure>
-        <figure class="ico-carrito">
-            <a href="/areas/4-carrito-compras/"><img src="/imagenes/icon/carrito-icon.png" alt="Carrito" class="img"></a>
-        </figure>
+      <a href="/index.html">
+          <div class="logo flex-centrar">
+              <p class="fuente-grande">Paquetes Now</p>
+              <p class="azul-oscuro">Gana tus experiencias!</p>
+          </div>
+      </a>
+      <button class="cerrar btn-anima">cerrar sesion</button> <!--Apareceria si se inicio sesion-->
+      <button class="ico-usuario btn-anima"> <a href="/areas/8-Iniciar-secion/index.html"><img class="img" src="/imagenes/icon/user-icon.png" alt="Usuario"></a> </button>
+      <button class="ico-carrito btn-anima"> <a href="/areas/4-carrito-compras/"><img src="/imagenes/icon/carrito-icon.png" alt="Carrito" class="img"></a> </button>
     </header>
-    <section class="paquete">
+    <section class="viaje">
         <figure class="paquete-info">
             <h1>Nombre*</h1>
             <div>
                 <img src="/imagenes/imagenPrueba.png" alt="Imagen stock" class="img">
                 <div class="info-botones">
-                    <button>Descripcion</button>
+                    <button class="activo">Descripcion</button>
                     <button>Vuelos</button>
                     <button>Hoteles</button>
                 </div>
@@ -42,17 +39,18 @@
                 <p>Personas: <span>2</span></p>
                 <p>Precio total: $<span>60.000</span></p>
             </div>
-            <h2>¡Vive tu experiencia!</h2>
-            <button class="btn-comprar">Comprar</button>
-            <button class="btn-contactar">Contactar</button>
-            <button class="btn-agregar"><img src="/imagenes/icon/carrito-plus-icon.png" alt="Agregar al carrito" class="img"></button>
+            <h2 class="rojo">¡Vive tu experiencia!</h2>
+            <button class="btn-comprar btn-anima">Comprar</button>
+            <button class="btn-contactar btn-anima">Contactar</button>
+            <button class="btn-agregar btn-anima"><img src="/imagenes/icon/carrito-plus-icon.png" alt="Agregar al carrito" class="img"></button>
 
             <div class="datos-pago">
-                <figure><img src="/imagenes/icon/tajeta-icon.png" alt="Icono" class="img"></figure>
+                <figure><img src="/imagenes/icon/tarjeta-icon.png" alt="Icono" class="img"></figure>
                 <h3>Aceptamos</h3>
                 <p>jdi Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolore ipsum ipsa consequuntur natus quae vel sapiente nulla expedita in sint pariatur qui id, minima unde tenetur exercitationem. Delectus, sit?</p>
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>

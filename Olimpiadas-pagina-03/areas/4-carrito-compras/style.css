@@ -36,15 +36,10 @@
 
 .btn-comprar{
   background-color: var(--color-1);
-  color: var(--fondo);
   width: 150px;
   position: absolute; right: 20px; bottom: 20px;
-  border: none;
   border-radius: 10px;
   font-size: 30px;
-}
-.btn-comprar:hover{
-  background-color: var(--color-8);
 }
 
 /* Contenido del carrito */
@@ -52,23 +47,23 @@
   display: flex;
   flex-direction: row;
   width: 70%;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .paquete > figure{
   flex: 0 0 auto;
   height: 100%;
   aspect-ratio: 1/1;
-  border-radius: 10px 0 0 10px;
-  overflow: hidden;
 }
 .x{
   background-color: var(--color-4);
-  border: none;
-  border-radius: 5px;
-  padding: 3px;
+  border-radius: 10px;
+  padding: 10px;
   width: 30px;
   height: 30px;
-  cursor: pointer;
 }
+
+
 .linea{
   display: flex;
   flex-direction: row;
@@ -100,5 +95,9 @@
   border-radius: 10px;
   font-size: 40px;
   padding: 10px 20px;
+  cursor: pointer;
 }
 
+.btn-ver:hover{
+  outline: 2px solid var(--color-fuente);
+}

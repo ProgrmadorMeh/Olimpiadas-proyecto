@@ -29,5 +29,8 @@ img{
     object-fit: cover;
 }
 
-/* Classes */
+button{
+    cursor: pointer;
+    border: none;
+}
 

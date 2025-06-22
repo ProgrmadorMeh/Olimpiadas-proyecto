@@ -28,3 +28,16 @@
     flex-direction: column;
 }
 
+.paquete{
+    box-shadow: 0px 5px 15px rgb(0, 0, 0,0.3);
+}
+
+.btn-anima:active{
+    box-shadow: 0px 0px 5px rgb(0, 0, 0,0.3) inset;
+}
+
+.btn-anima:hover{
+    border: none;
+    outline: none;
+    outline: 2px solid var(--color-fuente);
+}

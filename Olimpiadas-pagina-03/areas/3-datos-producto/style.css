@@ -1,6 +1,6 @@
 @import url(/css/global.css);
 
-.paquete{
+.viaje{
     width: 100%;
     margin-bottom: 50px;
     min-width: var(--largo);
@@ -11,6 +11,7 @@
 .paquete-info{
     flex: 0 0 60%; 
     border-radius: 10px 0;
+    background-color: var(--color-fondo);
     border-right: 2px solid var(--color-fuente);
     border-bottom: 2px solid var(--color-fuente);
 }
@@ -26,20 +27,26 @@
     bottom: 0;
     left: 0;
 }
-.paquete-info button{
-    font-size: 30px;
-    width: fit-content;
+.info-botones button{
+    box-shadow: -5px -15px 15px rgb(0, 0, 0, 0.2);
+    font-size: 20px;
+    width: 130px;
     border: none;
     border-radius: 10px 10px 0 0;
     padding: 10px 0;
-    cursor: pointer;
-    background-color: var(--fondo);
-    margin-left: -5px;
+    background-color: var(--color-5);
+    margin-left: -10px;
 }
 .paquete-info figcaption{
     width: 100%;
     min-height: 300px;
     padding: 20px 15px;
+}
+
+.info-botones .activo{
+    background-color: var(--fondo);
+    position: relative;
+    z-index: 1;
 }
 
 /**/
@@ -67,13 +74,12 @@
 }
 .btn-agregar{
     width: 60px;
-    padding: 10px;
+    padding: 5px;
     border: none;
     border-radius: 10px;
     margin-left: 10px;
     margin-right: auto;
-    cursor: pointer;
-    background-color: var(--color-2);
+    background-color: var(--fondo);
 }
 
 .btn-comprar, .btn-contactar{
@@ -81,18 +87,22 @@
     width: 90%;
     padding: 10px 0;
     font-size: 25px;
-    cursor: pointer;
 }
 .btn-comprar{
     background-color: var(--color-3);
     border: none;
-
 }
 .btn-contactar{
     background: none;
-    border: 1px solid var(--color-8);
+    outline: 2px solid var(--color-8);
     color: var(--color-8);
 }
+
+.btn-contactar:hover{
+    background-color: var(--color-8);
+    color: var(--fondo);
+}
+
 .datos-pago{
     border: 2px solid var(--color-fuente);
     border-radius: 10px;
@@ -102,8 +112,8 @@
     position: relative;
 }
 .datos-pago figure{
-    width: 40px; height: 40px;
-    position: absolute; top: 0; right: 0
+    width: 30px; height: 30px;
+    position: absolute; top: 2%; right: 2%;
 }
 
 @media (max-width: 800px) {

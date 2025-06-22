@@ -16,20 +16,19 @@ header{
   display: flex;
   flex-direction: row;
   width: 70%;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .paquete figure{
   flex: 0 0 auto;
   height: 100%;
   aspect-ratio: 1/1;
-  border-radius: 10px 0 0 10px;
-  overflow: hidden;
 }
 
 .paquete > div{
   width: 100%;
   padding: 20px 20px 50px 20px;
   background-color: var(--color-2);
-  border-radius: 0 10px 10px 0;
 }
 .paquete .paquete-detalles{
   height: 100%;
