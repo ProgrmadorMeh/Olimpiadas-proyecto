@@ -1,8 +1,9 @@
+import { STRAPI_HOST } from "../Producto/mostrarDatos.js";
 import {mostrarD} from "../Producto/mostrarDatos.js";
-
+mostrarD();
 let datos = [];
 window.addEventListener("DOMContentLoaded",async function(){
-    let {cantidadT,id} = await mostrarD();     
+      
     const botonComprar = document.getElementById("botonComprar");
     if(botonComprar){
 botonComprar.addEventListener('click', () => (confirmar()));
@@ -15,7 +16,6 @@ botonComprar.addEventListener('click', () => (confirmar()));
  
  function GuardarLocal() {    
     localStorage.setItem("carrito",JSON.stringify(datos));
-    localStorage.setItem("precioTpaquete",cantidadT); 
 }
 function cargar(){
     let guardar = localStorage.getItem("carrito");
@@ -26,16 +26,19 @@ function cargar(){
 
 function confirmar() { 
     try {
+    const id = parseFloat(localStorage.getItem("MostrarDatosID"));
+    const precioTpaquete = parseFloat(localStorage.getItem("precioTpaquete"));    
     const precio = document.getElementById("Sprecio").textContent;
-const lugar = document.getElementById("lugar").textContent;
+const nombre = document.getElementById("nombre").textContent;
 const inputC = document.getElementById("inputC").value;
 console.log("Cantidad ingresada:", inputC); 
  if(!isNaN(inputC) && inputC > 0){    
     const item = {
-        lugar: lugar,
-        precio: precio,
+        nombre: nombre,
+        precio: "precio por persona: ",precio,
         cantidad: inputC,
-        id: id,       
+        id: id,
+        precioTpaquete: "precio por cantidad de personas ingresadas",precioTpaquete       
     };
     datos.push(item);
     GuardarLocal();

@@ -1,6 +1,7 @@
 export const STRAPI_HOST = 'http://localhost:1338'
 export async function mostrarD() {
      const id = localStorage.getItem("MostrarDatosID");
+     const precioT = localStorage.getItem("precioTpaquete");
      const urlP = `${STRAPI_HOST}/api/paquetes-turismos?populate=*&filters[id][$eq]=${encodeURIComponent(id)}`;
        let url = urlP;
       if(!id){
@@ -30,8 +31,8 @@ export async function mostrarD() {
         inputC.addEventListener('input',function(){            
         cantidadT = (paquete.precio * inputC.value);     
         cantidadSpan.innerHTML = cantidadT;    
+        localStorage.setItem("precioTpaquete",cantidadT); 
         });
-        });   
-        return {cantidadT,id};    
+        });     
     }    
     }

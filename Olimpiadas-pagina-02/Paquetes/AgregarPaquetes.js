@@ -116,6 +116,7 @@ boton.onclick = () => {
 Ulprecio.appendChild(liBoton);
 liBoton.appendChild(enlace);
 enlace.appendChild(boton);
+return {data,paquetes};
 });
 } else{
 console.error("los paquetes no fueron encontrados",data);  
