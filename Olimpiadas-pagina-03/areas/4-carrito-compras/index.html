@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sticky bottom left dentro del contenedor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+      <a href="/index.html">
+          <div class="logo flex-centrar">
+              <p class="fuente-grande">Paquetes Now</p>
+              <p class="azul-oscuro">Gana tus experiencias!</p>
+          </div>
+      </a>
+      <figure class="ico-usuario">
+          <a href="#"><img class="img" src="/imagenes/icon/user-icon.png" alt="Usuario"></a>
+      </figure>
+      <figure class="ico-carrito">
+          <a href="/areas/4-carrito-compras/"><img src="/imagenes/icon/carrito-icon.png" alt="Carrito" class="img"></a>
+      </figure>
+  </header>
+  
+  <section class="seccion-carrito">
+
+    <div class="carrito-contenedor">
+      <section class="carrito">
+        <article class="paquete">
+          <figure><img src="/imagenes/imagenPrueba.png" alt="Imagen de ejemplo" class="img"></figure>
+          <div>
+            <div class="linea">
+              <h2>Nombre*</h2>
+              <button class="x"><img src="/imagenes/icon/x-icon.png" alt="X"></button>
+            </div>
+            <div class="paquete-detalles">
+              <div> <p>Precio <p class="azul fuente-grande">$<span class="azul">30000</span></p> </p> </div>
+              <div> <p>Personas <p class="personas-rect"><span>2</span></p></p> </div>
+              <button class="btn-ver">Ver</button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <figure class="usuario"><img class="img" src="/imagenes/icon/user-icon.png" alt="Imagen de usuario"></figure>
+      <p class="total">Total: <span class="azul precio fuente-mediana paquetes-total">$[total]</span></p>
+      <button id="subir" class="btn btn-comprar fuente-mediana">Comprar</button>
+
+    </div>
+  </section>
+</body>
+</html>
+
